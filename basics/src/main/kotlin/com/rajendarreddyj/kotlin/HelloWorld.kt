@@ -8,6 +8,10 @@ package com.rajendarreddyj.kotlin
  * an Array of strings as a parameter. Note that semicolons are optional.
  */
 
-fun main(args: Array<String>) {
-    println("Hello, world!")
+fun getHelloString() : String {
+    return "Hello, world!"
+}
+
+fun main(args : Array<String>) {
+    println(getHelloString())
 }
