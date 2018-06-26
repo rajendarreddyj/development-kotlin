@@ -1,0 +1,8 @@
+apply plugin: "kotlin"
+
+description = "kotlin basics"
+
+dependencies {
+    // Your dependencies here
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
