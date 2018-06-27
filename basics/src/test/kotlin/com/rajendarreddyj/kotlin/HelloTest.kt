@@ -52,7 +52,8 @@ class HelloTest {
         testMismatch("24 RRR 1957")
     }
 
-    @Test fun testListOfPeople() {
+    @Test
+    fun testListOfPeople() {
         Assert.assertEquals("[Person(name=Alice, age=29), Person(name=Bob, age=31)]", getPeople().toString())
     }
 
@@ -77,26 +78,31 @@ class HelloTest {
                 shouldBeInvoked, invoked)
     }
 
-    @Test fun everythingIsOk() {
+    @Test
+    fun everythingIsOk() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")),
                 "Hi Bob! We have an awesome proposition for you...",
                 "bob@gmail.com",
                 true)
     }
 
-    @Test fun noMessage() {
+    @Test
+    fun noMessage() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")), null)
     }
 
-    @Test fun noEmail() {
+    @Test
+    fun noEmail() {
         testSendMessageToClient(Client(PersonalInfo(null)), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    @Test fun noPersonalInfo() {
+    @Test
+    fun noPersonalInfo() {
         testSendMessageToClient(Client(null), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    @Test fun noClient() {
+    @Test
+    fun noClient() {
         testSendMessageToClient(null, "Hi Bob! We have an awesome proposition for you...")
     }
 }

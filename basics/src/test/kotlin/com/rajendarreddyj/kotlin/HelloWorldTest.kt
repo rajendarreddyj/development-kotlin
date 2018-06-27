@@ -7,7 +7,8 @@ import org.junit.Test
  * Created by rajendarreddy on 5/20/17.
  */
 class HelloWorldTest {
-    @Test fun testAssert() {
+    @Test
+    fun testAssert() {
         assertEquals("Hello, world!", getHelloString())
     }
 }
