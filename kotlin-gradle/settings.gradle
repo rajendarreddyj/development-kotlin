@@ -15,7 +15,7 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'development-kotlin'
+rootProject.name = 'kotlin-gradle'
 include ':basics'
 
 project(':basics').projectDir = "$rootDir/basics" as File
